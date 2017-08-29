@@ -1,0 +1,50 @@
+﻿@model OnlineBanking.Models.CheckingAccount
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CheckingAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Account.AccountType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account.AccountType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deposit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deposit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Withdraw)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Withdraw)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckingAccountType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckingAccountType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CheckingAccountID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

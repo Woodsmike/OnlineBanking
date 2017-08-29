@@ -1,0 +1,51 @@
+﻿@model IEnumerable<OnlineBanking.Models.CheckingAccount>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Account.AccountType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Deposit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Withdraw)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckingAccountType)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Account.AccountType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Deposit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Withdraw)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckingAccountType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CheckingAccountID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CheckingAccountID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CheckingAccountID })
+        </td>
+    </tr>
+}
+
+</table>

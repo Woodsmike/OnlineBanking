@@ -1,0 +1,42 @@
+﻿@model OnlineBanking.Models.Account
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Account</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckingAccountNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckingAccountNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SavingsAccountNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SavingsAccountNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AccountID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -194,14 +194,21 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AccountsController.cs" />
+    <Compile Include="Controllers\CheckingAccountsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SavingsAccountsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CheckingAccount.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OnlineBankingContext.cs" />
+    <Compile Include="Models\SavingsAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -276,6 +283,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Accounts\Create.cshtml" />
+    <Content Include="Views\Accounts\Delete.cshtml" />
+    <Content Include="Views\Accounts\Details.cshtml" />
+    <Content Include="Views\Accounts\Edit.cshtml" />
+    <Content Include="Views\Accounts\Index.cshtml" />
+    <Content Include="Views\CheckingAccounts\Create.cshtml" />
+    <Content Include="Views\CheckingAccounts\Delete.cshtml" />
+    <Content Include="Views\CheckingAccounts\Details.cshtml" />
+    <Content Include="Views\CheckingAccounts\Edit.cshtml" />
+    <Content Include="Views\CheckingAccounts\Index.cshtml" />
+    <Content Include="Views\SavingsAccounts\Create.cshtml" />
+    <Content Include="Views\SavingsAccounts\Delete.cshtml" />
+    <Content Include="Views\SavingsAccounts\Details.cshtml" />
+    <Content Include="Views\SavingsAccounts\Edit.cshtml" />
+    <Content Include="Views\SavingsAccounts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

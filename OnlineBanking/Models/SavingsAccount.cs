@@ -9,13 +9,11 @@ namespace OnlineBanking.Models
 {
     public class SavingsAccount
     {
-        protected double savingsAccountBalance = 5000000; //set fields
-        protected double deposit;
-        protected double withdraw;
-        protected string savingsAccountType;
+        protected double savingsAccountBalance = 0; //set fields
+       
 
         [Key]
-        public int SavingsAccountID { get; set; }
+        public int SavingsAccountID { get; set; }     
 
         public double SavingsAccountBalance  //used this property to store savings acct. information
         {
