@@ -9,24 +9,24 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Account.AccountType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Deposit)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Withdraw)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CheckingAccountType)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
+<div class="container-fluid">
+    
+            <h2>
+                @Html.DisplayNameFor(model => model.Account.AccountType)
+            </h2>
+            <h2>
+                @Html.DisplayNameFor(model => model.Deposit)
+            </h2>
+            <h2>
+                @Html.DisplayNameFor(model => model.Withdraw)
+            </h2>
+            <h2>
+                @Html.DisplayNameFor(model => model.CheckingAccountType)
+            </h2>
+            
+</div>
+@foreach (var item in Model)
+{
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Account.AccountType)
@@ -41,11 +41,11 @@
             @Html.DisplayFor(modelItem => item.CheckingAccountType)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CheckingAccountID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CheckingAccountID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CheckingAccountID })
+            @Html.ActionLink("Edit", "Edit", new { id = item.CheckingAccountID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.CheckingAccountID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.CheckingAccountID })
         </td>
     </tr>
 }
 
-</table>
+

@@ -1,15 +1,35 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
+@*<html>*@
+<script>
+$(document).ready(function(){
+	$('.slider')._TMS({
+		show:0,
+		pauseOnHover:false,
+		prevBu:false,
+		nextBu:false,
+		playBu:false,
+		duration:1000,
+		preset:'fade',
+		pagination:true,//'.pagination',true,'<ul></ul>'
+		pagNums:false,
+		slideshow:8000,
+		numStatus:false,
+		banners:'fade',// fromLeft, fromRight, fromTop, fromBottom
+		waitBannerAnimation:false,
+		progressBar:false
+	})
+})
+</script>
+@*<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+</head>*@
+@*<body>*@
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,10 +48,10 @@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>
-    <div class="container body-content">
+    </div>*@
+    @*<div class="container body-content">*@
         @RenderBody()
-        <hr />
+        @*<hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
@@ -40,5 +60,5 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-</body>
-</html>
+</body>*@
+@*</html>*@

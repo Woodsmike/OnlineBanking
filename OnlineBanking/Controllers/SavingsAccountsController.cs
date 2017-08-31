@@ -12,6 +12,9 @@ namespace OnlineBanking.Controllers
 {
     public class SavingsAccountsController : Controller
     {
+        public SavingsAccountsController()
+        {
+        }
         private OnlineBankingContext db = new OnlineBankingContext();
 
         // GET: SavingsAccounts
